@@ -1,2 +1,2 @@
 # Website-about-global-warming
-not finished yet
+Yes, a website about global warming. Yes, it is not finished
