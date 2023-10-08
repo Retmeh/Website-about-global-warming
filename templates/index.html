@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Document</title>
+       
+
+
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <title>Портфолио</title>
+    <style>
+      #movable_object2 {
+        width: 100px;
+        height: 100px;
+        background-image: url("../static/img/karton.png");
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+
+
+
+      }
+      #movable_object1 {
+        width: 100px;
+        height: 100px;
+        background-image: url("../static/img/paper.png");
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+
+
+
+      }
+
+    </style>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav main-nav">
+        <ul class="main-nav__list main-list">
+          <li class="main-list__item list-item">
+            <a class="list-item__link" href="#home">HOME</a>
+          </li>
+          <li class="main-list__item list-item">
+            <a class="list-item__link" href="#about">ABOUT</a>
+          </li>
+          <li class="main-list__item list-item">
+            <a class="list-item__link" href="#skills">MINI GAMES</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <!-- Секция превью -->
+      <section class="main__home home" id="home">
+        <h1 class="home__title">Global warming</h1>
+        <p class="home__subtitle">Information and solutions to this problem</p>
+      </section>
+      <!-- Секция с рассказом о себе -->
+      <section class="main__about about" id="about">
+        <h2 class="about__title">ABOUT GLOBAL WARMING</h2>
+        <h2 class="about__title2">What is Global Warming?</h2>
+        
+        <div class="about__info info-block">
+          <p class="info-block__text">
+            Global warming is a gradual increase in the temperature near the Earth’s surface mainly due to the greenhouse effect caused by increased levels of carbon dioxide, Chlorofluorocarbons (CFCs), and other pollutants.
+            
+
+          </p>
+        
+          
+        
+          
+          
+        </div>
+        <h2 class="about__title3"></h2>
+        <h2 class="about__title3">Why Is It a Problem?</h2>
+        <div class="about__info info-block">
+          
+          <p class="info-block__text">
+            
+            As the temperatures rise, climate changes faster than some living things can adapt to. This unpredictable climate change poses unique challenges to all life. Global warming is also causing Earth’s remaining ice sheets, such as Greenland and Antarctica, to melt. That extra water from the ice sheets raises sea levels significantly and quickly.
+            
+
+          </p>
+        
+          
+        </div>
+        <h2 class="about__title4"></h2>
+        <h2 class="about__title4">Main Causes of Global Warming?</h2>
+        <div class="about__info info-block">
+          <p class="info-block__text1">
+            The greenhouse effect is the leading cause of global warming. The more greenhouses gases are released into the atmosphere, the more heat is retained. This eventually leads to global warming. Other causes of global warming include:
+            
+            
+
+          </p>
+          
+          
+        </div>
+        
+
+        <div class="info-block__text2">
+          <p><strong>Deforestation:</strong> Plants absorb carbon dioxide and release oxygen, thereby cleaning the air. Forests worldwide are being depleted for domestic and commercial purposes. This has led to more carbon dioxide remaining in the atmosphere, leading to global warming.</p>
+          <p><strong>Increased use of vehicles:</strong> Vehicles burn fossil fuels that emit a large amount of carbon dioxide and other toxins. The more cars we use, the more greenhouse gases are emitted, resulting in raised temperatures.</p>
+          <p><strong>Chlorofluorocarbon: </strong>Air conditioners and refrigerators release chlorofluorocarbon (CFCs) into the environment, which <a href="https://www.ecofriendlyhabits.com/ozone-layer-depletion-causes-effects/" target="_blank" rel="noopener">depletes the atmospheric ozone layer</a>, thereby increasing the temperature of the Earth. The ozone layer protects us from the harmful ultraviolet rays from the sun.</p>
+          <p><strong>Agriculture:</strong> Chemical fertilizers produce carbon dioxide and methane gas that add to the atmosphere’s greenhouse gases, causing global warming.</p>
+          <p><strong>Overpopulation:</strong> An increase in population means an increase in human activities that cause the emission of greenhouse gases. Consequently, causing global warming.</p>
+          <p><strong>Volcanoes:</strong> Volcanic eruptions emit ash and smoke that goes out into the atmosphere and causes global warming.</li>
+          <p><strong>Melting permafrost:</strong> Permafrost is frozen soil with environmental gases trapped in it for several years and is found where glaciers are present. When permafrost melts, the gases are released back into the atmosphere, increasing the Earth’s temperature.</p>
+          <p><strong>Forest fires:</strong> The smoke from forest fires contains a large amount of carbon. When released into the atmosphere, the carbon increases the Earth’s temperature resulting in global warming.</p>
+            
+          
+            
+
+        </div>
+
+      </section>
+      <!-- Секция со скиллами -->
+      <section class="main__skills skills" id="skills">
+        <h2 class="skills__title">MINI GAMES</h2>
+        <form action="/" method="POST">
+          <ul class="skills__list skills-list">
+            <li class="skills-list__skill skill">
+              <img
+                class="skill__img"
+                src="../static/img/python.png"
+                alt="python"
+                width="150"
+                height="150"
+              />
+              <span class="skill__info">Game</span>
+              <input class="skill__button" type="submit" name="button_python" value="SHOW PROJECT">
+            </li>
+            <li class="skills-list__skill skill">
+              <img
+                class="skill__img"
+                src="../static/img/discord.png"
+                alt="discord"
+                width="150"
+                height="150"
+              />
+              <span class="skill__info">Game</span>
+              <input class="skill__button" type="submit" name="button_discord" value="SHOW PROJECT">
+            </li>
+            
+          </ul>
+        </form>
+        {% if button_python%}
+          <div class="skills__project project" id="project">
+              
+            <div id="movable_object1"></div>
+            <div id="movable_object2"></div>
+              
+              
+          </div>
+        {% endif %}
+        {% if button_discord%}
+          <div class="skills__project project" id="project">
+              <img class="project__img" src="../static/img/1-bot-mention.png" alt="project" width="500">
+              <li class="skills-list__skill skill">
+                <input class="skill__button" type="submit" name="button_db" value="Проверить">
+              </li>
+              <div class="drop_list">
+              <div id="c4" class="drop">4</div>
+              <div id="c1" class="drop">1</div>
+              <div id="c6" class="drop">6</div>
+              <div id="c3" class="drop">3</div>
+              <div id="c5" class="drop">5</div>
+              <div id="c2" class="drop">2</div>
+              <div id="c7" class="drop">7</div>
+              </div>
+        {% if button_prov%}
+          <div class="skills__project project" id="project">
+          
+          
+            <div>YES</div>
+              
+
+
+          
+        {% endif %}
+        
+          </div>
+        {% endif %}
+        {% if button_html%}
+          <div class="skills__project project" id="project">
+              <img class="project__img" src="../static/img/1-bot-mention.png" alt="project" width="500">
+              <a class="project__link" href="https://github.com/retmeh">Открыть на GitHub</a>
+              
+            </div>
+        {% endif %}
+        {% if button_db%}
+          <div class="skills__project project" id="project">
+              <img class="project__img" src="../static/img/python-project.png" alt="project" width="500">
+              <a class="project__link" href="https://github.com/retmeh">Открыть на GitHub</a>
+          </div>
+        {% endif %}
+      </section>
+      <!-- Секция с формой обратной связи -->
+      <section class="main__feedback feedback" id="feedback">
+        <h2 class="feedback__title">FEEDBACK</h2>
+        <form action="" method="POST" class="feedback__form form">
+          <label for="email">
+            <input type="email" class="form__input" name="email" id="email" placeholder="Введите E-mail" required>
+          </label>
+          <label for="text">
+            <textarea name="text" class="form__input" id="text" cols="70" rows="10" required placeholder="Комментарий"></textarea>
+          </label>
+          <button class="form__button" type="submit">ОТПРАВИТЬ</button>
+        </form>
+      </section>
+      
+    </main>
+    <!-- Подвал для ссылок на соц-сети -->
+    <footer>
+
+    </footer>
+    <script> 
+    
+      // JavaScript для перемещения обьекта 
+      window.addEventListener('DOMContentLoaded', (event) => { 
+        const object = document.getElementById('movable_object2'); 
+        let isDragging = false; 
+        let offsetX, offsetY; 
+ 
+        // Координаты для падения объекта 
+        const targetY = 3300; 
+        let currentY = 3100; 
+        const gravity = 10; // Гравитация, для имитации падения 
+ 
+         
+        // Обработчик события нажатия кнопки мыши 
+        object.addEventListener('mousedown', (event) => { 
+          isDragging = true; 
+          currentY -= 250;
+          offsetX = event.clientX - object.offsetLeft; 
+          offsetY = event.clientY - object.offsetTop; 
+        }); 
+ 
+        // Обработчик события отпускания кнопки мыши 
+        object.addEventListener('mouseup', () => { 
+          isDragging = false; 
+          animateFall(); 
+           
+        }); 
+ 
+        // Обработчик события движения мыши 
+        document.addEventListener('mousemove', (event) => { 
+          if (isDragging) { 
+            object.style.left = event.clientX - offsetX + 'px'; 
+            object.style.top = event.clientY - offsetY + 'px'; 
+          } 
+        }); 
+       
+        function animateFall() { 
+        const animation = requestAnimationFrame(animateFall); 
+    
+        // Приближаем объект к целевым координатам с помощью гравитации 
+        currentY += gravity; 
+        object.style.top = currentY + 'px'; 
+    
+        if (currentY >= targetY) { 
+          // Достигнута целевая координата, завершаем анимацию 
+          cancelAnimationFrame(animation); 
+          currentY -= gravity; 
+          function checkCollision(movable_object1, movable_object2) {
+            
+            return(
+            movable_object1.x < movable_object2.x + movable_object2.width &&
+            movable_object1.x + movable_object1.width > movable_object2.x &&
+            movable_object1.y < movable_object2.y + movable_object2.height &&
+            movable_object1.y + movable_object1.height > movable_object2.y 
+            
+                      
+        );
+        }
+        } 
+      } 
+ 
+      }); 
+    </script>
+    <script> 
+    
+      // JavaScript для перемещения обьекта 
+      window.addEventListener('DOMContentLoaded', (event) => { 
+        const object = document.getElementById('movable_object1'); 
+        let isDragging = false; 
+        let offsetX, offsetY; 
+ 
+        // Координаты для падения объекта 
+        const targetY = 3300; 
+        let currentY = 3100; 
+        const gravity = 10; // Гравитация, для имитации падения 
+ 
+         
+        // Обработчик события нажатия кнопки мыши 
+        object.addEventListener('mousedown', (event) => { 
+          isDragging = true; 
+          currentY -= 250;
+          offsetX = event.clientX - object.offsetLeft; 
+          offsetY = event.clientY - object.offsetTop; 
+        }); 
+ 
+        // Обработчик события отпускания кнопки мыши 
+        object.addEventListener('mouseup', () => { 
+          isDragging = false; 
+          animateFall(); 
+           
+        }); 
+ 
+        // Обработчик события движения мыши 
+        document.addEventListener('mousemove', (event) => { 
+          if (isDragging) { 
+            object.style.left = event.clientX - offsetX + 'px'; 
+            object.style.top = event.clientY - offsetY + 'px'; 
+          } 
+        }); 
+       
+        function animateFall() { 
+        const animation = requestAnimationFrame(animateFall); 
+    
+        // Приближаем объект к целевым координатам с помощью гравитации 
+        currentY += gravity; 
+        object.style.top = currentY + 'px'; 
+    
+        if (currentY >= targetY) { 
+          // Достигнута целевая координата, завершаем анимацию 
+          cancelAnimationFrame(animation); 
+          currentY -= gravity; 
+          function checkCollision(movable_object1, movable_object2) {
+            
+            return(
+            movable_object1.x < movable_object2.x + movable_object2.width &&
+            movable_object1.x + movable_object1.width > movable_object2.x &&
+            movable_object1.y < movable_object2.y + movable_object2.height &&
+            movable_object1.y + movable_object1.height > movable_object2.y 
+            
+                      
+        );
+        }
+        } 
+      } 
+    });
+        
+
+
+
+
+      
+    </script>
+
+    <script>
+      
+      
+      
+      var div = document.getElementById('circle');
+      
+      var listener = function(e) {
+        
+        div.style.left = e.pageX - 50 + "px";
+        div.style.top = e.pageY - 50 + "px";
+      };
+
+      
+
+      circle.addEventListener('mousedown', e => {
+          document.addEventListener('mousemove', listener);
+      });
+
+      circle.addEventListener('mouseup', e => {
+          document.removeEventListener('mousemove', listener);
+      });
+      
+
+
+      
+      
+
+
+
+
+    </script>
+    <script>
+      document.querySelectorAll('.drop').forEach(e => {
+      e.draggable = true;
+      e.ondragstart = e => {
+        e.dataTransfer.setData("id", e.target.id);
+        e.target.classList.add('dragging');
+      }
+      e.ondragover = e => {
+        let old = document.querySelector('.over');
+        old && old.classList.remove('over')
+        e.target.classList.add('over');
+        e.preventDefault();
+      };
+      e.ondrop = e => {
+        let old = document.querySelector('.dragging');
+        old && old.classList.remove('dragging')
+        old = document.querySelector('.over');
+        old && old.classList.remove('over');
+        let v = e.target.innerHTML;
+        let fromEl = document.querySelector('#'+e.dataTransfer.getData('id'));
+        e.target.innerHTML = fromEl.innerHTML;
+        fromEl.innerHTML = v;
+
+      };
+      })
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    <script>
+    
+    </script>
+
+    
+    
+  </body>
+
+
+
+    
+  
+        
+        
+
+    </html>
+
+
+    
